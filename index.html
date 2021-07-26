@@ -2,27 +2,48 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Hello Coursera!</title>
+    <title>Test!</title>
     <style>
       p {
         color: rgb(74, 74, 145);
         background-color: rgb(74, 255, 0);
         height: 50px;
-        width: 50px;
+
         border: 1px solid black;
         margin-bottom: 15px;
+      }
+      @media (min-width 1200px) {
+        #p3 {
+          width: 200px;
+        }
+        #p4 {
+          width: 200%;
+        }
+        #d1{
+          width 50%;
+        }
       }
       #p2 {
         background-color: rgb(80, 8, 8);
         position: relative;
         top: 65px;
         left: 65px;
+        width: 50%;
       }
       #p3 {
         background-color: rgb(36, 8, 80);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 50%;
       }
       #p4 {
         background-color: rgb(3, 43, 5);
+      }
+      #d1 {
+        position: relative;
+        background-color: rgb(193, 212, 194);
+        top: 60px;
       }
       h1 {
         color: rgb(139, 29, 29);
@@ -42,10 +63,12 @@
     <span> inline element </span>
 
     <nav>navigation</nav>
-    <p>p</p>
-    <p id="p2">p2</p>
-    <p id="p3">p3</p>
-    <p id="p4">p4</p>
+    <div id="d1">
+      <p>p</p>
+      <p id="p2">p2</p>
+      <p id="p3">p3</p>
+      <p id="p4">p4</p>
+    </div>
     <ol>
       <li>ui - unordered list</li>
       <li>ol - ordered list</li>
