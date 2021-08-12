@@ -3,14 +3,14 @@ body {
   margin: 0;
   background-color: #e0f2f1;
 }
-.header {
+.main-nav {
   background-color: #004d40;
   color: #fff;
   padding: 0 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9), 0 6px 6px rgba(0, 0, 0, 0.13); */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9), 0 6px 6px rgba(0, 0, 0, 0.13);
 }
 .nav1 {
   color: #fff;
@@ -45,5 +45,23 @@ body {
 .home-inner h1 {
   font-weight: normal;
   font-size: 3rem;
+  margin: 1 100px;
+}
+
+.grid-container {
+  border: 1px solid 004d40;
+  max-width: 1200px;
   margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+}
+
+.card {
+  border: 1px solid #004d40;
+  background-color: #b2dfdb;
+  width: 500px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 30, 0, 0.7), 0 3px 4px rgba(0, 80, 0, 0.11);
 }
